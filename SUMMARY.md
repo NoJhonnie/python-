@@ -9,4 +9,5 @@
     * [2 查询](chapter1/2-cha-xun.md)
     * 3 高级应用
 * [Second Chapter](second-chapter.md)
+* [Ubuntu的使用](ubuntude-shi-yong.md)
 
