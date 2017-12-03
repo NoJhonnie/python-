@@ -11,7 +11,8 @@
       * [1.5 脚本操作](chapter1/1chuang-jian-shu-ju-ku-he-biao/15-jiao-ben-cao-zuo.md)
     * [2 查询](chapter1/2-cha-xun.md)
       * [2.1 条件查询](chapter1/2-cha-xun/21-tiao-jian-cha-xun.md)
-      * [2.2 聚合条件](chapter1/22-ju-he-tiao-jian.md)
+      * [2.2 聚合查询](chapter1/22-ju-he-tiao-jian.md)
+      * [2.3 分组查询](chapter1/2-cha-xun/23-fen-zu-cha-xun.md)
     * 3 高级应用
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
