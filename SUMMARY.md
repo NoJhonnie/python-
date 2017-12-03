@@ -13,6 +13,8 @@
       * [2.1 条件查询](chapter1/2-cha-xun/21-tiao-jian-cha-xun.md)
       * [2.2 聚合查询](chapter1/22-ju-he-tiao-jian.md)
       * [2.3 分组查询](chapter1/2-cha-xun/23-fen-zu-cha-xun.md)
+      * [2.4 数据排序](chapter1/2-cha-xun/24-shu-ju-pai-xu.md)
+      * [2.5 分页查询](chapter1/2-cha-xun/25-bu-fen-cha-xun.md)
     * 3 高级应用
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
