@@ -248,5 +248,22 @@ truncate table person;
 
 注：truncate不可带条件删除
 
+##### delete和truncate的比较
+
+| delete | trunate |
+| :---: | :---: |
+| 可以全表删除 | 可以全表删除 |
+| 可以带条件删除 | 不可带条件删 |
+| 不能删除表的约束 | 可以删除表的约束 |
+| 删除数据可以回滚 | 删除的数据不能回滚 |
+
+* ## 查询数据
+
+##### 查询所有的字段
+
+```
+select * from table_name
+```
+
 
 
