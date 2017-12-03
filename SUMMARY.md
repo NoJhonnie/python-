@@ -18,6 +18,8 @@
     * [3 高级应用](chapter1/3-gao-ji-ying-yong.md)
       * [3.1 实体关系](chapter1/31-shi-ti-guan-xi.md)
       * [3.2 连接](chapter1/32-lian-jie.md)
+      * [3.3 自关联](chapter1/33-zi-guan-lian.md)
+      * [3.4 子查询](chapter1/34-zi-cha-xun.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
 
