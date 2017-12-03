@@ -17,7 +17,7 @@
       * [2.5 分页查询](chapter1/2-cha-xun/25-bu-fen-cha-xun.md)
     * [3 高级应用](chapter1/3-gao-ji-ying-yong.md)
       * [3.1 实体关系](chapter1/31-shi-ti-guan-xi.md)
-      * 3.2 连接
+      * [3.2 连接](chapter1/32-lian-jie.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
 
