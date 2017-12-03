@@ -188,5 +188,41 @@ alter table table_name change column db dl double ;
 alter table table-name drop dm;
 ```
 
+# 数据的增删改查
+
+* ## 插入数据
+
+##### 插入所有字段
+
+```
+insert into table_name values(1, 'mike', )
+```
+
+##### 部分插入
+
+```
+insert into table_name(name, age, gender) values('Jim', 18, 'male');
+```
+
+* ## 更新数据
+
+##### 修改所有字段数据
+
+```
+update table_name set gender = 'male';
+```
+
+##### 带条件修改
+
+```
+update table_name set gender= 'female' where id=2;
+```
+
+##### 修改多个字段，用分号隔开。语法：set 字段名=值，字段名=值，...
+
+```
+update table_name set gender= 'female', name='Jack' where id=2;
+```
+
 
 
