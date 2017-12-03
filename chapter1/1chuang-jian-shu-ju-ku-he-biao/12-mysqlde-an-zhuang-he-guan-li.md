@@ -42,11 +42,15 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 * 登陆mysql运行命令
 
 ```
-grant all privileges on *.* to 'root'@'%' identified by 'mysql' with grant option;
+grant all privileges on *.* to 'root'@'%' identified by 'password' with grant option;
 flush privileges;
 ```
 
 * 重启mysql
+
+```
+sudo /etc/init.d/mysql restart
+```
 
 
 
