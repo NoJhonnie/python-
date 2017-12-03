@@ -224,5 +224,29 @@ update table_name set gender= 'female' where id=2;
 update table_name set gender= 'female', name='Jack' where id=2;
 ```
 
+* ## 删除数据
+
+##### 删除所有数据delete
+
+不建议用，除非特殊需要
+
+```
+delete from person;
+```
+
+##### 带条件删除delete
+
+```
+delete from person where id=2;
+```
+
+##### 使用truncate删除
+
+```
+truncate table person;
+```
+
+注：truncate不可带条件删除
+
 
 
