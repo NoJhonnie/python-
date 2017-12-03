@@ -76,7 +76,7 @@ mysql> drop database db_name;
 use db_name;
 ```
 
-## 表的创建
+* ## 表的创建
 
 ```
 create table table_name(字段1 类型，字段2 类型 ， … ) ;
@@ -90,6 +90,102 @@ mysql> create table student(
     -> sname varchar(20),
     -> sage int
     -> );
+```
+
+表的创建还可以添加约束（非空、主键、外键、唯一、自增长、默认等），设置默认引擎，默认字符集，如下示例：
+
+```
+CREATE TABLE 'db' (
+  'id' int primary key,
+  'db' double DEFAULT NULL,
+  'dm' decimal(10,0) DEFAULT NULL,
+  'gender' int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+```
+
+查看创建的表
+
+```
+mysql> desc student;
+```
+
+结果：
+
+```
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| sid   | int(11)     | YES  |     | NULL    |       |
+| sname | varchar(20) | YES  |     | NULL    |       |
+| sage  | int(11)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+```
+
+* ## 查看表的结构和查看所有表
+
+```
+describe table_name;
+show create table table_name;
+```
+
+查看所有表
+
+```
+show tables;
+```
+
+结果：
+
+```
++-------------------+
+| Tables_in_db_name |
++-------------------+
+| student           |
++-------------------+
+1 row in set (0.01 sec)
+```
+
+* ## 删除表
+
+```
+drop table table_name;
+```
+
+* ## 修改表
+
+##### 修改表名
+
+```
+alter table old_table_name rename to new_table_name;
+```
+
+##### 添加字段
+
+```
+alter table table_name add column field_name varchar(50);
+alter table table_name add column field_name varchar(50) first;添加到第一个位置
+alter table table_name add column field_name varchar(50) after id;添加到id后面
+```
+
+##### 修改字段类型
+
+```
+alter table table_name modify column name text;
+```
+
+##### 修改字段名称
+
+```
+alter table table_name change column db dl double ;
+```
+
+将table\_name的db字段改名为dl字段，类型为double。
+
+##### 删除字段
+
+```
+alter table table-name drop dm;
 ```
 
 
