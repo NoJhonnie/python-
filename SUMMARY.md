@@ -25,4 +25,5 @@
     * [4 与python的交互](chapter1/4-yu-python-de-jiao-hu.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
+  * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
