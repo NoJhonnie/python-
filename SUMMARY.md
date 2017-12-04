@@ -20,6 +20,7 @@
       * [3.2 连接](chapter1/32-lian-jie.md)
       * [3.3 自关联](chapter1/33-zi-guan-lian.md)
       * [3.4 子查询](chapter1/34-zi-cha-xun.md)
+      * [3.5 内置函数](chapter1/35-zi-han-shu.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
 
