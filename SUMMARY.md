@@ -21,6 +21,8 @@
       * [3.3 自关联](chapter1/33-zi-guan-lian.md)
       * [3.4 子查询](chapter1/34-zi-cha-xun.md)
       * [3.5 内置函数](chapter1/35-zi-han-shu.md)
+      * [3.6 视图与事务](chapter1/36-shi-tu.md)
+    * [4 与python的交互](chapter1/4-yu-python-de-jiao-hu.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
 
