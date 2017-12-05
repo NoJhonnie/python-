@@ -52,5 +52,25 @@ except Exception,e:
     print e.message
 ```
 
+### sql语句参数化
+
+```
+#encoding=utf-8
+import MySQLdb
+try:
+    conn = MySQLdb.connect(host='192.168.1.107', port='3306',
+            db='db_name', user='root', passwd='root', charset='utf8')
+    cncs = conn.cursor()
+    sname=raw_input("请输入学生姓名")
+    params = [sname]
+    count = cncs.execute('insert into students(sname) values(%s)', params)
+    print count
+    conn.commit()
+    cncs.close()
+    conn.close()
+except Exception,e:
+    print e.message
+```
+
 
 
