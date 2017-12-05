@@ -25,6 +25,7 @@
     * [4 与python的交互](chapter1/4-yu-python-de-jiao-hu.md)
       * [4.1 安装与交互](chapter1/4-yu-python-de-jiao-hu/41-an-zhuang-yu-jiao-hu.md)
       * [4.2 增删改](chapter1/4-yu-python-de-jiao-hu/42-zeng-shan-gai.md)
+      * [4.3 查询](chapter1/4-yu-python-de-jiao-hu/43-cha-xun.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
