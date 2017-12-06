@@ -28,24 +28,25 @@ isdelete bit default 0);
 from MysqlHelper import MysqlHelper
 from hashlib import sha1
 
-sname=raw_input("请输入用户名：")
-spwd=raw_input("请输入密码:")
+sname = raw_input("please input your account:")
+spwd = raw_input("please input your password:")
 
-s1=sha1()
+s1 = sha1()
 s1.update(spwd)
-spwdSha1=s1.hexdigest()
+spwdSha1 = s1.hexdigest()
 
-sql="select upwd from userinfos where uname=%s"
-params=[sname]
+sql = "select upwd from userinfos where uname=%s"
+params = [sname]
+sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
+upwd = sqlHelper.get_one(sql,params)
 
-sqlhelper=MysqlHelper('localhost',3306,'test1','root','mysql')
-userinfo=sqlhelper.get_one(sql,params)
-if userinfo==None:
-    print '用户名错误'
-elif userinfo[0]==spwdSha1:
-    print '登录成功'
+if upwd != None and upwd[0] == spwdSha1:
+    print 'login in success!!!'
+
+elif upwd != None and upwd[0] != spwdSha1:
+    print 'Password Error!'
 else:
-    print '密码错误'
+    print 'no account!'
 ```
 
 ### 用户注册
@@ -74,7 +75,6 @@ elif upwd != None and upwd[0] != spwdSha1:
     print 'Password Error!'
 else:
     print 'no account!'
-
 ```
 
 
