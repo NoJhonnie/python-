@@ -52,6 +52,10 @@ else:
 ### 用户注册
 
 ```
+#encoding=utf-8
+from MysqlHelper import MysqlHelper
+from hashlib import sha1
+
 sname = raw_input("please input your account:")
 sql = "select * from userinfos where uname=%s"
 params = [sname]
@@ -78,6 +82,8 @@ else:
     else:
         print 'error'
 ```
+
+### 注册与登陆结合
 
 
 
