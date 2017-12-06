@@ -52,29 +52,33 @@ else:
 ### 用户注册
 
 ```
-#encoding=utf-8
-from MysqlHelper import MysqlHelper
-from hashlib import sha1
-
 sname = raw_input("please input your account:")
-spwd = raw_input("please input your password:")
-
-s1 = sha1()
-s1.update(spwd)
-spwdSha1 = s1.hexdigest()
-
-sql = "select upwd from userinfos where uname=%s"
+sql = "select * from userinfos where uname=%s"
 params = [sname]
 sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
-upwd = sqlHelper.get_one(sql,params)
+userinfo = sqlHelper.get_one(sql,params)
 
-if upwd != None and upwd[0] == spwdSha1:
-    print 'login in success!!!'
+if userinfo != None and userinfo[1] == sname:
+    print 'there is a same user!Please input other username!'
 
-elif upwd != None and upwd[0] != spwdSha1:
-    print 'Password Error!'
+
 else:
-    print 'no account!'
+    spwd = raw_input("please input your password:")
+
+    s1 = sha1()
+    s1.update(spwd)
+    spwdSha1 = s1.hexdigest()
+
+    sql = "insert into userinfos(uname,upwd) values(%s,%s)"
+    params = [sname,spwdSha1]
+    sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
+    count = sqlHelper.insert(sql,params)
+    if count == 1:
+        print 'create success!'
+
+    else:
+        print 'error'
+
 ```
 
 
