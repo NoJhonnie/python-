@@ -61,7 +61,6 @@ userinfo = sqlHelper.get_one(sql,params)
 if userinfo != None and userinfo[1] == sname:
     print 'there is a same user!Please input other username!'
 
-
 else:
     spwd = raw_input("please input your password:")
 
@@ -78,7 +77,6 @@ else:
 
     else:
         print 'error'
-
 ```
 
 
