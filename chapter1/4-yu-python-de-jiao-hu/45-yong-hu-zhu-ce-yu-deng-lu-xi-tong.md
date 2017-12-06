@@ -85,5 +85,79 @@ else:
 
 ### 注册与登陆结合
 
+```
+#encoding=utf-8
+from MysqlHelper import MysqlHelper
+from hashlib import sha1
+print '-------------------------------------'
+print '----------welcome--------------------'
+outflag = True
+while outflag:
+    print '[1] login in      [2]create account'
+    choose = raw_input(">")
+    if choose == '1' or choose == 'login in':
+        isflag = True
+        while isflag:
+            sname = raw_input("please input your account:")
+            spwd = raw_input("please input your password:")
+
+            s1 = sha1()
+            s1.update(spwd)
+            spwdSha1 = s1.hexdigest()
+
+            sql = "select upwd from userinfos where uname=%s"
+            params = [sname]
+            sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
+            upwd = sqlHelper.get_one(sql,params)
+
+            if upwd != None and upwd[0] == spwdSha1:
+                print 'login in success!!!'
+                isflag = False
+                outflag = False
+            elif upwd != None and upwd[0] != spwdSha1:
+                print 'Password Error!'
+                isflag = True
+            else:
+                print 'no account!'
+                isflag = False
+                outflag = True
+
+    elif choose == '2' or choose == 'create account':
+        isflag = True
+        while isflag:
+            sname = raw_input("please input your account:")
+          
+            sql = "select * from userinfos where uname=%s"
+            params = [sname]
+            sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
+            userinfo = sqlHelper.get_one(sql,params)
+        
+            if userinfo != None and userinfo[1] == sname:
+                print 'there is a same user!Please input other username!'
+                isflag = True
+     
+            else:
+                spwd = raw_input("please input your password:")
+
+                s1 = sha1()
+                s1.update(spwd)
+                spwdSha1 = s1.hexdigest()
+
+                sql = "insert into userinfos(uname,upwd) values(%s,%s)"
+                params = [sname,spwdSha1]
+                sqlHelper = MysqlHelper('192.168.1.107',3306,'db_name','root','root')
+                count = sqlHelper.insert(sql,params)
+                if count == 1:
+                    print 'create success!'
+                    isflag = False
+                    outflag = False
+                else:
+                    print 'error'
+                    isflag = False
+    else:
+        print 'please input number!'
+        outflag = True
+```
+
 
 
