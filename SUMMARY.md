@@ -28,6 +28,7 @@
       * [4.3 查询](chapter1/4-yu-python-de-jiao-hu/43-cha-xun.md)
       * [4.4 封装](chapter1/4-yu-python-de-jiao-hu/44-feng-zhuang.md)
       * [4.5 用户注册与登陆系统](chapter1/4-yu-python-de-jiao-hu/45-yong-hu-zhu-ce-yu-deng-lu-xi-tong.md)
+  * [MongoDB使用](chapter1/mongodbshi-yong.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
