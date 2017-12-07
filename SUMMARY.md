@@ -31,6 +31,7 @@
   * [MongoDB使用](chapter1/mongodbshi-yong.md)
     * [1 基本操作](chapter1/mongodbshi-yong/1-ji-ben-cao-zuo.md)
       * [1.1 环境安装](chapter1/mongodbshi-yong/1-ji-ben-cao-zuo/11-huan-jing-an-zhuang.md)
+      * [1.2 数据库切换](chapter1/mongodbshi-yong/1-ji-ben-cao-zuo/12-shu-ju-ku-qie-huan.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
