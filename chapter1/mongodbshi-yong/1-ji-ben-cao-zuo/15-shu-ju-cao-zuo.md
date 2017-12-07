@@ -30,7 +30,7 @@ db.集合名称.update(
     <update>,    更新操作符，sql类比set
     {multi:<boolean>    默认false，表示只更新找到的第一条记录；
                         true表示满足条件的文档全部更新
-} 
+}
 ```
 
 ```
