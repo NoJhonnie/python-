@@ -40,5 +40,28 @@ db.sub.find({$or:[{count:{$gte:10}}],title:"vb"})
 
 ### 范围运算符
 
+* $in：某个范围内
+
+```
+db.sub.find({count:{$in:[5,10]}})
+```
+
+### 正则表达式
+
+使用//或$regex正则表达式
+
+```
+db.sub.find({name:/^林/})
+db.sub.find({name:{$regex:'^黄'}})
+```
+
+### 自定义查询
+
+$where后面接函数，返回满足条件的数据
+
+```
+db.stu.find({$where:function(){return this.age>20}})
+```
+
 
 
