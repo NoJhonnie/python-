@@ -1,0 +1,17 @@
+### $project
+
+* 修改输入文档的结构，如重命名、增加、删除字段、创建计算结果
+
+```
+db.stu.aggregate([{$project:{_id:0,name:1,age:1}}])    查询学生的姓名、年龄
+```
+
+```
+db.stu.aggregate([
+    {$group:{id:'$gender',counter:{$sum:1}}},
+    {$project:{_id:0,counter:1}}
+    ])    查询男女生人数，输出人数
+```
+
+
+
