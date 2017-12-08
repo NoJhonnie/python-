@@ -42,6 +42,7 @@
         * [2.1.1 $group](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/211-group.md)
         * [2.1.2 $match](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/212-match.md)
         * [2.1.3 $project](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/213-project.md)
+        * [2.1.4 $sort](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/214-sort.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
