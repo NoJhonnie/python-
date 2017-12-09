@@ -48,6 +48,12 @@
   * [NoSQL](chapter1/nosql.md)
     * [1 安装](chapter1/nosql/1-an-zhuang.md)
     * [2 数据操作](chapter1/nosql/2-shu-ju-cao-zuo.md)
+      * [2.1 string](chapter1/nosql/2-shu-ju-cao-zuo/21-string.md)
+      * [2.2 键命令](chapter1/nosql/2-shu-ju-cao-zuo/22-jian-ming-ling.md)
+      * 2.3 hash
+      * 2.4 list
+      * 2.5 set
+      * 2.6 zset
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
