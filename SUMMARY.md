@@ -56,7 +56,7 @@
       * [2.6 zset](chapter1/nosql/2-shu-ju-cao-zuo/26-zset.md)
     * [3 高级操作](chapter1/nosql/3-gao-ji-cao-zuo.md)
       * [3.1 发布订阅](chapter1/nosql/3-gao-ji-cao-zuo/31-fa-bu-ding-yue.md)
-      * 3.2 主从配置
+      * [3.2 主从配置](chapter1/nosql/3-gao-ji-cao-zuo/32-zhu-cong-pei-zhi.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
