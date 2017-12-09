@@ -29,10 +29,19 @@ sudo vi /etc/redis/redis.conf
 在127.0.0.1注释掉
 ```
 
-### 启动客户端
+### 客户端操作
 
 ```
-redis-cli
+redis-cli    启动客户端
+ctr+c或quit    退出
+```
+
+apt-get安装的停止/启动/重启服务器
+
+```
+/etc/init.d/redis-server stop
+/etc/init.d/redis-server start
+/etc/init.d/redis-server restart
 ```
 
 
