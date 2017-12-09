@@ -46,7 +46,7 @@
         * [2.1.5 $limit](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/215-limit.md)
         * [2.1.6 $unwind](chapter1/mongodbshi-yong/2-gao-ji-cao-zuo/216-unwind.md)
   * [NoSQL](chapter1/nosql.md)
-    * 1 安装
+    * [1 安装](chapter1/nosql/1-an-zhuang.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
