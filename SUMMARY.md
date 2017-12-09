@@ -59,7 +59,9 @@
       * [3.2 主从配置](chapter1/nosql/3-gao-ji-cao-zuo/32-zhu-cong-pei-zhi.md)
     * [4 与python交互](chapter1/nosql/4-yu-python-jiao-hu.md)
     * [5 登陆系统](chapter1/nosql/5-deng-lu-xi-tong.md)
-* [Second Chapter](second-chapter.md)
+* [前端](second-chapter.md)
+  * [1 HTML5](second-chapter/1-html.md)
+  * [1.1 CSS权重](second-chapter/11-cssquan-zhong.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
