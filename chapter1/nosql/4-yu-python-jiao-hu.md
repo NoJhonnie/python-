@@ -24,7 +24,7 @@ except Exception,e:
     print e.message
 ```
 
-3.方式一：根据数据类型的不同，调用相应的方法，完成读写   
+3.方式一：根据数据类型的不同，调用相应的方法，完成读写
 
 ```
 r.set('name','hello')
@@ -38,6 +38,22 @@ pipe = r.pipeline()
 pipe.set('name','world')
 pipe.get('name')
 pipe.execute()
+```
+
+### 封装
+
+```
+import redis
+class RedisHelper():
+    def __init__(self,host='192.168.1.107',port=6379):
+        self._redis = redis.StrictRedis(host,port)
+    def get(self,key):
+        if self._redis.exists(key):
+            return self._redis.get(key)
+        else:
+            return ""
+    def set(self,key,value):
+        self._redis.set(key,value)
 ```
 
 
