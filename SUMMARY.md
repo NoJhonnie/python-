@@ -52,8 +52,8 @@
       * [2.2 键命令](chapter1/nosql/2-shu-ju-cao-zuo/22-jian-ming-ling.md)
       * [2.3 hash](chapter1/nosql/2-shu-ju-cao-zuo/23-hash.md)
       * [2.4 list](chapter1/nosql/2-shu-ju-cao-zuo/24-list.md)
-      * 2.5 set
-      * 2.6 zset
+      * [2.5 set](chapter1/nosql/2-shu-ju-cao-zuo/25-set.md)
+      * [2.6 zset](chapter1/nosql/2-shu-ju-cao-zuo/26-zset.md)
 * [Second Chapter](second-chapter.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
