@@ -51,7 +51,7 @@
       * [2.1 string](chapter1/nosql/2-shu-ju-cao-zuo/21-string.md)
       * [2.2 键命令](chapter1/nosql/2-shu-ju-cao-zuo/22-jian-ming-ling.md)
       * [2.3 hash](chapter1/nosql/2-shu-ju-cao-zuo/23-hash.md)
-      * 2.4 list
+      * [2.4 list](chapter1/nosql/2-shu-ju-cao-zuo/24-list.md)
       * 2.5 set
       * 2.6 zset
 * [Second Chapter](second-chapter.md)
