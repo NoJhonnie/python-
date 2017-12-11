@@ -69,6 +69,7 @@
     * [1.6 CSSanimation](second-chapter/16-cssanimation.md)
     * [1.7 浏览器前缀](second-chapter/17-liu-lan-qi-qian-zhui.md)
     * [1.8 HTML5新结构标签](second-chapter/18-html5xin-jie-gou-biao-qian.md)
+    * [1.9 HTML5新增表单控件](second-chapter/19-html5xin-zeng-biao-dan-kong-jian.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
