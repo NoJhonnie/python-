@@ -76,6 +76,7 @@
     * [2.2 嵌入页面的方式](second-chapter/2-javascript/22-qian-ru-ye-mian-de-fang-shi.md)
     * [2.3 变量](second-chapter/2-javascript/23-bian-liang.md)
     * [2.4 获取元素方法](second-chapter/2-javascript/24-huo-qu-yuan-su-fang-fa.md)
+    * [2.5 元素操作](second-chapter/2-javascript/25-yuan-su-cao-zuo.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
