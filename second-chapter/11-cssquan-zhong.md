@@ -18,5 +18,27 @@
 
 6.通用选择器\(\*\)、子选择器\(&gt;\)、相邻选择器\(+\)、同胞选择器\(~\)、权重值为0
 
+```
+<style type="text/css">
+    #content div.main_content h2{
+        color:red;    
+    }
+    #content .main_content h2{
+        color:blue;
+    }
+</style>
+......
+<div id="content">
+    <div class="main_content">
+        <h2>这是一个h2标题</h2>
+    </div>
+</div>
+<!-- 
+第一条样式的权重计算： 100+1+10+1，结果为112；
+第二条样式的权重计算： 100+10+1，结果为111；
+h2标题的最终颜色为red
+-->
+```
+
 
 
