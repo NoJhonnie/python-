@@ -71,6 +71,8 @@
     * [1.8 HTML5新结构标签](second-chapter/18-html5xin-jie-gou-biao-qian.md)
     * [1.9 HTML5新增表单控件](second-chapter/19-html5xin-zeng-biao-dan-kong-jian.md)
     * [1.10 音频和视频](second-chapter/110-yin-pin-he-shi-pin.md)
+  * [2 Javascript](second-chapter/2-javascript.md)
+    * [2.1 介绍](second-chapter/2-javascript/21-jie-shao.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
