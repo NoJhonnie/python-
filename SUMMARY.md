@@ -73,6 +73,7 @@
     * [1.10 音频和视频](second-chapter/110-yin-pin-he-shi-pin.md)
   * [2 Javascript](second-chapter/2-javascript.md)
     * [2.1 介绍](second-chapter/2-javascript/21-jie-shao.md)
+    * [2.2 嵌入页面的方式](second-chapter/2-javascript/22-qian-ru-ye-mian-de-fang-shi.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
