@@ -23,7 +23,7 @@
             width:300px;
             height:272px;
             margin:50px auto 0;
-            transform-style:preserve-3d;
+            transform-style:preserve-3d;    /* 变换风格为3d，默认为平面 */
             position:relative;            
         }
         .box .pic{
