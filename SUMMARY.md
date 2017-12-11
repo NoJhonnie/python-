@@ -66,6 +66,7 @@
     * [1.3 CSS圆角、阴影和rgba](second-chapter/13-css3yuan-jiao-3001-yin-ying-he-rgba.md)
     * [1.4 CSStransition动画](second-chapter/14-csstransitiondong-hua.md)
     * [1.5 CSStransform变换](second-chapter/15-transformbian-huan.md)
+    * [1.6 CSSanimation](second-chapter/16-cssanimation.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
