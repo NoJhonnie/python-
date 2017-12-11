@@ -64,6 +64,7 @@
     * [1.1 CSS权重](second-chapter/11-cssquan-zhong.md)
     * [1.2 CSS新增选择器](second-chapter/12-xin-zeng-xuan-ze-qi.md)
     * [1.3 CSS3圆角、阴影和rgba](second-chapter/13-css3yuan-jiao-3001-yin-ying-he-rgba.md)
+    * [1.4 CSStransition动画](second-chapter/14-csstransitiondong-hua.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
