@@ -61,7 +61,8 @@
     * [5 登陆系统](chapter1/nosql/5-deng-lu-xi-tong.md)
 * [前端](second-chapter.md)
   * [1 HTML5](second-chapter/1-html.md)
-  * [1.1 CSS权重](second-chapter/11-cssquan-zhong.md)
+    * [1.1 CSS权重](second-chapter/11-cssquan-zhong.md)
+    * [1.2 新增选择器](second-chapter/12-xin-zeng-xuan-ze-qi.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
