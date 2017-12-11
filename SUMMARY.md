@@ -67,6 +67,7 @@
     * [1.4 CSStransition动画](second-chapter/14-csstransitiondong-hua.md)
     * [1.5 CSStransform变换](second-chapter/15-transformbian-huan.md)
     * [1.6 CSSanimation](second-chapter/16-cssanimation.md)
+    * [1.7 浏览器前缀](second-chapter/17-liu-lan-qi-qian-zhui.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
