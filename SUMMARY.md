@@ -60,7 +60,7 @@
     * [4 与python交互](chapter1/nosql/4-yu-python-jiao-hu.md)
     * [5 登陆系统](chapter1/nosql/5-deng-lu-xi-tong.md)
 * [前端](second-chapter.md)
-  * [1 HTML5](second-chapter/1-html.md)
+  * [1 CSS3和HTML5](second-chapter/1-html.md)
     * [1.1 CSS权重](second-chapter/11-cssquan-zhong.md)
     * [1.2 CSS新增选择器](second-chapter/12-xin-zeng-xuan-ze-qi.md)
     * [1.3 CSS圆角、阴影和rgba](second-chapter/13-css3yuan-jiao-3001-yin-ying-he-rgba.md)
@@ -68,6 +68,7 @@
     * [1.5 CSStransform变换](second-chapter/15-transformbian-huan.md)
     * [1.6 CSSanimation](second-chapter/16-cssanimation.md)
     * [1.7 浏览器前缀](second-chapter/17-liu-lan-qi-qian-zhui.md)
+    * [1.8 HTML5新结构标签](second-chapter/18-html5xin-jie-gou-biao-qian.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
