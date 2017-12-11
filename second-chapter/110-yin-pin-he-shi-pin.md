@@ -2,7 +2,8 @@
 
 html5增加了audio和video标签，提供了在页面上插入音频和视频的标准方法。
 
-**audio标签**  
+### **audio标签**
+
 支持格式：ogg、wav、mp3
 
 对应属性：  
