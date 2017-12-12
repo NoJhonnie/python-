@@ -78,6 +78,7 @@
     * [2.4 获取元素方法](second-chapter/2-javascript/24-huo-qu-yuan-su-fang-fa.md)
     * [2.5 元素操作](second-chapter/2-javascript/25-yuan-su-cao-zuo.md)
     * [2.6 函数](second-chapter/2-javascript/26-han-shu.md)
+    * [2.7 条件语句](second-chapter/2-javascript/27-tiao-jian-yu-ju.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
