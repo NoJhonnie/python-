@@ -19,7 +19,7 @@ var aList2 = [1,2,3,'abc'];    //直接创建
 
 ```
 var aList = [1,2,3,4];
-alert(aList.join('@')); // 弹出 1-2-3-4
+alert(aList.join('@')); // 弹出 1@2@3@4
 ```
 
 
