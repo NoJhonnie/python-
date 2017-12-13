@@ -83,7 +83,7 @@
     * [2.9 循环语句](second-chapter/2-javascript/29-xun-huan-yu-ju.md)
     * [2.10 JavaScript的组成](second-chapter/2-javascript/210-javascriptde-zu-cheng.md)
       * [2.10.1 字符串处理方法](second-chapter/2-javascript/2101-zi-fu-chuan-chu-li-fang-fa.md)
-      * 2.10.2 
+      * [2.10.2 ](second-chapter/2-javascript/2102.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
