@@ -85,7 +85,7 @@
     * [2.11 字符串处理方法](second-chapter/2-javascript/2101-zi-fu-chuan-chu-li-fang-fa.md)
     * [2.12 定时器](second-chapter/2-javascript/212-ding-shi-qi.md)
     * [2.13 类型转换](second-chapter/2-javascript/213-lei-xing-zhuan-huan.md)
-    * [2.14 变量作用域](second-chapter/2-javascript/214-bian-liang-zuo-yong-yu.md)
+    * [2.14 变量作用域和封闭函数](second-chapter/2-javascript/214-bian-liang-zuo-yong-yu.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
