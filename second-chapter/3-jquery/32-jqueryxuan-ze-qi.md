@@ -41,13 +41,20 @@ $('div').eq(5); //选择第6个div元素
 #### 选择集转移
 
 ```
-$('div').prev('p'); //选择div元素前面的第一个p元素
-$('div').next('p'); //选择div元素后面的第一个p元素
-$('div').closest('form'); //选择离div最近的那个form父元素
+$('div').prev(); //选择div元素前面的第一个p元素
+$('div').prevAll(); //选择div同级元素前面的所有元素，可以在()中进行选择
+$('div').next();    //选择div同级元素的下一个元素
+$('div').nextAll(); //选择div同级元素后面的所有元素，可以在()中进行选择
+$('div').closest('form'); //选择离div最近的那个form父元素，多层选择用这个
 $('div').parent(); //选择div的父元素
 $('div').children(); //选择div的所有子元素
 $('div').siblings(); //选择div的同级元素
 $('div').find('.myClass'); //选择div内的class等于myClass的元素
+```
+
+```
+$('.list li') //不能回到父级
+$('.list').children()  //可以通过end()回到父级
 ```
 
 
