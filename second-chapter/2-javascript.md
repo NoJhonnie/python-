@@ -75,7 +75,7 @@ JavaScript中的变量和函数也可以组成一个对象。对象的变量即�
 </script>
 ```
 
-4.原型模式
+4.原型模式，推荐用这个方法，可以节约资源
 
 ```
 <script type="text/javascript">
@@ -100,7 +100,7 @@ JavaScript中的变量和函数也可以组成一个对象。对象的变量即�
 </script>
 ```
 
-5.继承
+5.继承   
 
 ```
 <script type="text/javascript">
@@ -136,5 +136,7 @@ JavaScript中的变量和函数也可以组成一个对象。对象的变量即�
     </script>
 ```
 
+call和apply都可以改变当前执行类中的this对象
 
+两者的区别是call后面接参数，而apply接数组
 

@@ -91,6 +91,8 @@
   * [3 JQuery](second-chapter/3-jquery.md)
     * [3.1 JQuery加载](second-chapter/3-jquery/31-jqueryjia-zai.md)
     * [3.2 jQuery选择器](second-chapter/3-jquery/32-jqueryxuan-ze-qi.md)
+    * [3.3 jQuery样式操作](second-chapter/3-jquery/33-jqueryyang-shi-cao-zuo.md)
+    * [3.4 jQuery属性操作](second-chapter/3-jquery/34-jqueryshu-xing-cao-zuo.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
