@@ -45,13 +45,13 @@ JavaScript中的变量和函数也可以组成一个对象。对象的变量即�
         };
         return o;
     }
-    
+
     var tom = Person('tom',18,'程序猿');
     tom.showname;
 </script>
 ```
 
-3.构造函数
+3.构造函数，与工厂模式的区别在于，构造函数没有一个Object类
 
 ```
 <script type="text/javascript">
@@ -115,7 +115,7 @@ JavaScript中的变量和函数也可以组成一个对象。对象的变量即�
         fclass.prototype.showage = function(){
             alert(this.age);
         }
-        
+
         //子类继承父类的属性，添加工作属性
         function sclass(name,age,job)
         {
