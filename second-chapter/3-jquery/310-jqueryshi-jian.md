@@ -35,7 +35,7 @@ unload()    用户离开页面
 $(function(){
     $('div1').bind('mouseover click', fucntion(event){
         alert($(this).html());
-        
+
         //取消绑定事件
         $(this).unbind();
         //指定取消事件
@@ -44,7 +44,7 @@ $(function(){
 });
 ```
 
-#### 取消绑定事件
+#### 
 
 
 
