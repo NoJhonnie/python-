@@ -95,6 +95,7 @@
     * [3.4 jQuery属性操作](second-chapter/3-jquery/34-jqueryshu-xing-cao-zuo.md)
     * [3.5 jQuery绑定click事件](second-chapter/3-jquery/35-jquerybang-ding-click-shi-jian.md)
     * [3.6 jQuery特殊效果](second-chapter/3-jquery/36-jqueryte-shu-xiao-guo.md)
+    * [3.7 jQuery链式调用](second-chapter/3-jquery/37-lian-shi-diao-yong.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
