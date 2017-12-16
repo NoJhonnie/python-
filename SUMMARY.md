@@ -99,6 +99,7 @@
     * [3.8 jQuery动画](second-chapter/3-jquery/38-jquerydong-hua.md)
     * [3.9 尺寸和滚动事件](second-chapter/3-jquery/39-chi-cun-he-gun-dong-shi-jian.md)
     * [3.10 jQuery事件](second-chapter/3-jquery/310-jqueryshi-jian.md)
+    * [3.11 主动触发与自定义事件](second-chapter/3-jquery/311-zhu-dong-hong-fa-yu-zi-ding-yi-shi-jian.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
