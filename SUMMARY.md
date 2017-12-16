@@ -88,6 +88,8 @@
     * [2.14 变量作用域和封闭函数](second-chapter/2-javascript/214-bian-liang-zuo-yong-yu.md)
     * [2.15 闭包](second-chapter/2-javascript/215-bi-bao.md)
     * [2.16 内置对象](second-chapter/2-javascript/216-nei-zhi-dui-xiang.md)
+  * [3 JQuery](second-chapter/3-jquery.md)
+    * [3.1 JQuery加载](second-chapter/3-jquery/31-jqueryjia-zai.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
