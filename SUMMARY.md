@@ -84,6 +84,7 @@
     * [2.10 JavaScript的组成](second-chapter/2-javascript/210-javascriptde-zu-cheng.md)
     * [2.11 字符串处理方法](second-chapter/2-javascript/2101-zi-fu-chuan-chu-li-fang-fa.md)
     * [2.12 定时器](second-chapter/2-javascript/212-ding-shi-qi.md)
+    * [2.13 类型转换](second-chapter/2-javascript/213-lei-xing-zhuan-huan.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
