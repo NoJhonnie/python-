@@ -28,5 +28,27 @@ $('#myForm:input')    //选择表单中的input元素
 $('div:visible')    //选择可见的div元素
 ```
 
+#### 对选择集进行函数过滤
+
+```
+$('div').has('p'); // 选择包含p元素的div元素
+$('div').not('.myClass'); //选择class不等于myClass的div元素
+$('div').filter('.myClass'); //选择class等于myClass的div元素
+$('div').first(); //选择第1个div元素
+$('div').eq(5); //选择第6个div元素
+```
+
+#### 选择集转移
+
+```
+$('div').prev('p'); //选择div元素前面的第一个p元素
+$('div').next('p'); //选择div元素后面的第一个p元素
+$('div').closest('form'); //选择离div最近的那个form父元素
+$('div').parent(); //选择div的父元素
+$('div').children(); //选择div的所有子元素
+$('div').siblings(); //选择div的同级元素
+$('div').find('.myClass'); //选择div内的class等于myClass的元素
+```
+
 
 
