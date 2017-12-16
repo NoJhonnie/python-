@@ -90,6 +90,7 @@
     * [2.16 内置对象](second-chapter/2-javascript/216-nei-zhi-dui-xiang.md)
   * [3 JQuery](second-chapter/3-jquery.md)
     * [3.1 JQuery加载](second-chapter/3-jquery/31-jqueryjia-zai.md)
+    * [3.2 jQuery选择器](second-chapter/3-jquery/32-jqueryxuan-ze-qi.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 

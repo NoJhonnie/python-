@@ -10,5 +10,15 @@ $(document).ready(function(){
 </script>
 ```
 
+简写
+
+```
+<script type="text/javasript">
+$(function(){
+    ...
+});
+</script>
+```
+
 
 
