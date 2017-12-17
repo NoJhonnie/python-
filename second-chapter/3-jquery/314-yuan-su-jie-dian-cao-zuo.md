@@ -11,5 +11,13 @@ var $div2 = $('<div>这是一个div元素</div>');
 
 1.append\(\)和appendTo\(\)：在现存元素的内部，从后面插入元素
 
+```
+var $span = $('<span>这是一个span元素</span>');
+$('#div1').append($span);
+$span.appendTo('#div1');
+......
+<div id="div1"></div>
+```
+
 
 
