@@ -49,5 +49,43 @@ $.ajax({
 });
 ```
 
+**新的写法：**
 
+```
+$.ajax({
+    url: 'js/user.json',
+    type: 'GET',
+    dataType: 'json',
+    data:{'aa':1}
+})
+.done(function(data) {
+    ......
+})
+.fail(function() {
+    alert('服务器超时，请重试！');
+});
+```
+
+### jsonp
+
+ajax只能请求同一个域下的数据或资源，有时候需要跨域请求数据，就需要用到jsonp技术，jsonp可以跨域请求数据，它的原理主要是利用了script标签可以跨域链接资源的特性。
+
+jsonp的原理如下：
+
+```
+<script type="text/javascript">
+    function aa(dat){
+        alert(dat.name);
+    }
+</script>
+<script type="text/javascript" src="....../js/data.js"></script>
+```
+
+页面上定义一个函数，引用一个外部js文件，外部js文件的地址可以是不同域的地址，外部js文件的内容如下：
+
+```
+aa({"name":"tom","age":18});
+```
+
+外部js文件调用页面上定义的函数，通过参数把数据传进去。
 
