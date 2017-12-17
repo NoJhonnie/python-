@@ -106,6 +106,7 @@
     * [3.15 鼠标滚轮事件及函数节流](second-chapter/3-jquery/315-shu-biao-gun-lun-shi-jian-ji-han-shu-jie-liu.md)
     * [3.16 json](second-chapter/3-jquery/316-json.md)
     * [3.17 Ajax与json](second-chapter/3-jquery/317-ajaxyu-json.md)
+    * [3.18 正则表达](second-chapter/3-jquery/318-zheng-ze-biao-da.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
