@@ -14,5 +14,40 @@ Ajax可以实现局部刷新，也叫无刷新，即整体页面不刷新，只�
 
 Ajax请求的页面或资源只能是同一个域下面的资源，不能是其他域的资源，基于安全考虑。
 
+#### $.ajax使用方法
+
+常用参数：
+
+1、url 请求地址
+
+2、type 请求方式，默认是'GET'，常用的还有'POST'
+
+3、dataType 设置返回的数据格式，常用的是'json'格式，也可以设置为'html'
+
+4、data 设置发送给服务器的数据
+
+5、success 设置请求成功后的回调函数
+
+6、error 设置请求失败后的回调函数
+
+7、async 设置是否异步，默认值是'true'，表示异步
+
+以前写法：
+
+```
+$.ajax({
+    url: 'js/user.json',
+    type: 'GET',
+    dataType: 'json',
+    data:{'aa':1}
+    success:function(data){
+        ......
+    },
+    error:function(){
+        alert('服务器超时，请重试！');
+    }
+});
+```
+
 
 
