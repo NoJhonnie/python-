@@ -108,6 +108,7 @@
     * [3.17 Ajax与json](second-chapter/3-jquery/317-ajaxyu-json.md)
     * [3.18 正则表达](second-chapter/3-jquery/318-zheng-ze-biao-da.md)
     * [3.19 本地存储](second-chapter/3-jquery/319-ben-di-cun-chu.md)
+    * [3.20 jQueryUI](second-chapter/3-jquery/320-jqueryui.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
