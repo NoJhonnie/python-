@@ -18,6 +18,9 @@ $(function(){
     $list = $('#list');
     $list.delegate('li', 'click', function(event) {
         $(this).css({background:'red'});
+        
+        //取消事件委托
+        $list.undelegate();
     });
 })
 ...
