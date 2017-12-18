@@ -109,6 +109,7 @@
     * [3.18 正则表达](second-chapter/3-jquery/318-zheng-ze-biao-da.md)
     * [3.19 本地存储](second-chapter/3-jquery/319-ben-di-cun-chu.md)
     * [3.20 jQueryUI](second-chapter/3-jquery/320-jqueryui.md)
+  * [4 移动端开发库](second-chapter/4-yi-dong-duan-kai-fa-ku.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
