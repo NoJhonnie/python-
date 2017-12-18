@@ -114,6 +114,19 @@ img-responsive声明响应式图片
 
 #### bootstrap模态框
 
-* 
+* modal声明一个模态框
+
+* modal-dialog定义模态框尺寸
+
+* modal-lg定义大尺寸模态框
+
+* modal-sm定义小尺寸模态框
+
+* modal-header
+
+* modal-body
+
+* modal-footer
+
 
 
