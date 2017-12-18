@@ -112,7 +112,7 @@
   * [4 移动端开发库](second-chapter/4-yi-dong-duan-kai-fa-ku.md)
     * [4.1 移动端js事件](second-chapter/4-yi-dong-duan-kai-fa-ku/41-yi-dong-duan-js-shi-jian.md)
     * [4.2 zepto](second-chapter/4-yi-dong-duan-kai-fa-ku/42-zepto.md)
-    * 4.3 swiper
+    * [4.3 swiper](second-chapter/4-yi-dong-duan-kai-fa-ku/43-swiper.md)
     * 9.4 boostrap
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
