@@ -110,6 +110,10 @@
     * [3.19 本地存储](second-chapter/3-jquery/319-ben-di-cun-chu.md)
     * [3.20 jQueryUI](second-chapter/3-jquery/320-jqueryui.md)
   * [4 移动端开发库](second-chapter/4-yi-dong-duan-kai-fa-ku.md)
+    * [4.1 移动端js事件](second-chapter/4-yi-dong-duan-kai-fa-ku/41-yi-dong-duan-js-shi-jian.md)
+    * 4.2 zepto
+    * 4.3 swiper
+    * 9.4 boostrap
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
