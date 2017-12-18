@@ -66,5 +66,54 @@ bootstrap将页面横向分为12等分，按照12等分定义了适应不同宽�
 15、btn-group 定义按钮组
 ```
 
+#### bootstrap图片
+
+img-responsive声明响应式图片
+
+#### bootstrap隐藏类
+
+* hidden-xs
+* hidden-sm
+* hidden-md
+* hidden-lg
+
+#### bootstrap字体图标
+
+通过字体替代图标，font文件夹需和css文件夹在同一个目录
+
+#### bootstrap下拉菜单
+
+* dropdown-toggle
+* dropdown-menu
+
+#### bootstrap选项卡
+
+* nav
+* nav-tabs
+* nav-pills
+* tab-content
+
+#### bootstrap导航条
+
+```
+1、navbar 声明导航条
+2、navbar-default 声明默认的导航条样式
+3、navbar-inverse 声明反白的导航条样式
+4、navbar-static-top 去掉导航条的圆角
+5、navbar-fixed-top 固定到顶部的导航条
+6、navbar-fixed-bottom 固定到底部的导航条
+7、navbar-header 申明logo的容器
+8、navbar-brand 针对logo等固定内容的样式
+9、navbar-left 菜单靠左
+11、nav navbar-nav 定义导航条中的菜单
+12、navbar-form 定义导航条中的表单
+13、navbar-btn 定义导航条中的按钮
+14、navbar-text 定义导航条中的文本
+10、navbar-right 菜单靠右
+```
+
+#### bootstrap模态框
+
+* 
 
 
