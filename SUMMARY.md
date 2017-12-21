@@ -113,7 +113,8 @@
     * [4.1 移动端js事件](second-chapter/4-yi-dong-duan-kai-fa-ku/41-yi-dong-duan-js-shi-jian.md)
     * [4.2 zepto](second-chapter/4-yi-dong-duan-kai-fa-ku/42-zepto.md)
     * [4.3 swiper](second-chapter/4-yi-dong-duan-kai-fa-ku/43-swiper.md)
-    * [9.4 boostrap](second-chapter/4-yi-dong-duan-kai-fa-ku/94-boostrap.md)
+    * [4.4 boostrap](second-chapter/4-yi-dong-duan-kai-fa-ku/94-boostrap.md)
+    * [4.5 优化操作](second-chapter/4-yi-dong-duan-kai-fa-ku/45-you-hua-cao-zuo.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
