@@ -43,5 +43,59 @@ less中文网址：[http://lesscss.cn/](http://lesscss.cn/)
 }
 ```
 
+4.匹配模式
+
+```
+.p(r){
+    postion:relative;
+}
+.p(a){
+    position:absolute;
+}
+
+.p(f){
+    position:fixed;
+}
+
+.box{
+    .p(f);
+}
+```
+
+5.可以进行运算
+
+```
+@w:300px;
+.box{
+    width:@w+20;
+}
+```
+
+6.嵌套
+
+```
+.list{
+    li{
+        ...
+    }
+    a{
+        ...
+        &:hover{
+            ...
+        }
+    }
+    span{
+        ...
+    }
+}
+```
+
+7.导入
+
+```
+@import "common";    //导入common
+@import (less) "a.css";    //导入a.css文件
+```
+
 
 
