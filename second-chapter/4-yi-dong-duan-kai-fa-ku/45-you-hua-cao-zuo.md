@@ -113,3 +113,14 @@ node.js的中文网站：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 
 grunt和gulp是使用node.js编写的，前端首选的自动化工具，gulp在书写配置上比grunt更简洁，运行的性能更高，gulp逐渐成为主流。
 
+#### gulp的使用 {#gulp的使用}
+
+gulp使用步骤： 安装nodejs -&gt; 全局安装gulp -&gt; 项目安装gulp以及gulp插件 -&gt; 配置gulpfile.js -&gt; 运行任务 gulp网站：[http://gulpjs.com/](http://gulpjs.com/)
+
+常用gulp插件：  
+压缩js代码（gulp-uglify）  
+less的编译（gulp-less）  
+css的压缩 （gulp-minify-css）  
+自动添加css3前缀（gulp-autoprefixer）  
+文件改名字 \(gulp-rename\)
+
