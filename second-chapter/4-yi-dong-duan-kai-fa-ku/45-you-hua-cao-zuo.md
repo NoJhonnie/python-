@@ -144,7 +144,42 @@ css的压缩 （gulp-minify-css）
 
 7.避免不必要的重定向加（“/”）
 
+## 二.编码
 
+#### html： {#html：}
 
+1、使用结构清晰，简单，语义化标签  
+2、避免空的src和href  
+3、不要在HTML中缩放图片
 
+#### css： {#css：}
+
+1、精简css选择器 2、把CSS放到顶部  
+3、避免@import方式引入样式  
+4、css中使用base64图片数据取代图片文件，减少请求数，在线转base64网站：[http://tool.css-js.com/base64.html](http://tool.css-js.com/base64.html)  
+5、使用css动画来取代javascript动画  
+6、使用字体图标,图标库网站：[http://fontawesome.io/icons/，在线制作网站：www.iconfont.cn](http://fontawesome.io/icons/，在线制作网站：www.iconfont.cn)  
+7、使用css sprite  
+8、使用svg图形  
+9、避免使用CSS表达式
+
+10、避免使用滤镜
+
+#### javascript： {#javascript：}
+
+1、减少引用库的个数  
+2、使用requirejs或seajs异步加载js  
+3、JS放到页面底部引入  
+4、避免全局查找  
+5、减少属性查找  
+6、使用原生方法  
+7、用switch语句代替复杂的if else语句  
+8、减少语句数，比如说多个变量声明可以写成一句  
+9、使用字面量表达式来初始化数组或者对象  
+10、使用DocumentFragments或innerHTML取代复杂的元素注入  
+11、使用事件代理\(事件委托\)  
+12、避免多次访问dom选择集  
+13、高频触发事件设置使用函数节流，如：onmousemove、onmouseover  
+14、使用Web Storage缓存数据  
+15、使用Array的join方法来代替字符串的“+”连接\(先将要连接的字符串放进数组\)
 
