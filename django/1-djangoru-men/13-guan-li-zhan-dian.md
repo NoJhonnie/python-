@@ -12,5 +12,47 @@ python manage.py runserver ip:port
 5.ctrl+c停止服务器
 ```
 
+## 管理操作
+
+#### django管理
+
+创建管理员用户
+
+```
+python manage.py createsuperuser
+创建完以后可以通过127.0.0.1:8000/admin进行访问
+```
+
+#### 管理界面本地化
+
+编辑settings.py文件，设置编码、时区
+
+```
+LANGUAGE_CODE = 'zh-Hans'
+TIME_ZONE = 'Asia/Shanghai'
+```
+
+### admin注册booktest模型
+
+打开booktest/admin.py文件，注册模型
+
+```
+from django.contrib import admin
+from models import BookInfo
+admin.site.register(BookInfo)
+```
+
+注：需要在str方法中添加”.encode\('utf-8'\)“避免出现ascii错误
+
+### 自定义管理页面
+
+Django提供了admin.ModelAdmin类，可以通过定义ModelAdmin的子类，来定义模型在Admin界面的显示方式
+
+```
+class QuestionAdmin(admin.ModelAdmin):
+    ...
+admin.site.register(Question,QuestionAdmin)
+```
+
 
 
