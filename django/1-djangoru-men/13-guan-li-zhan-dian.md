@@ -97,5 +97,49 @@ fieldsets = [
 ]
 ```
 
+### 关联对象
+
+对于HeroInfo类，有两种注册方式
+
+* 与BookInfo相同
+* 关联注册
+
+```
+from django.contrib import admin
+from models import BookInfo,HeroInfo
+
+class HeroInfoInline(admin.StackedInline):
+    model = HeroInfo
+    extra = 3
+    
+class BookInfoAdmin(admin.ModelAdmin):
+    inlines = [HeroInfoInline]
+    
+admin.site.register(BookInfo,BookInfoAdmin)
+
+注：可以改成表格形式
+class HeroInfoInline(admin.TabularInline)
+```
+
+#### 布尔值的显示
+
+对布尔显示的性别进行封装
+
+```
+def gender(self):
+    if self.hgender:
+        return '男'
+    else:
+        return '女'
+gender.short_description = '性别'
+```
+
+同时在admin注册中使用gender替代hgender
+
+```
+class HeroInfoAdmin(admin.ModelAdmin):
+    list_display = ['id', 'hname', 'gender', 'hcontent']
+```
+
 
 
