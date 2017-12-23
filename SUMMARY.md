@@ -117,6 +117,7 @@
     * [4.5 优化操作](second-chapter/4-yi-dong-duan-kai-fa-ku/45-you-hua-cao-zuo.md)
 * [Django](django.md)
   * [1 Django入门](django/1-djangoru-men.md)
+    * [1.1 搭建开发环境](django/1-djangoru-men/11-da-jian-kai-fa-huan-jing.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
