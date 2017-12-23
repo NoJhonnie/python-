@@ -123,5 +123,13 @@ b.save()
 b.delete()
 ```
 
+### 关联对象操作
 
+获取关联对象集合：返回当前book对象的所有hero
+
+```
+b.heroinfo_set.all()
+```
+
+有一个HeroInfo存在，则必须有BookInfo对象，并提供创建关联的数据
 
