@@ -80,5 +80,22 @@ search_fields = ['btitle']
 list_per_page = 10
 ```
 
+#### 添加修改页属性
+
+属性的先后顺序
+
+```
+fields = ['bpub_date', 'btitle']
+```
+
+属性分组
+
+```
+fieldsets = [
+    ('basic',{'fields':['btitle']}),
+    ('more',{'fields':['bpub_date']}),
+]
+```
+
 
 
