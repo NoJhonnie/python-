@@ -115,6 +115,8 @@
     * [4.3 swiper](second-chapter/4-yi-dong-duan-kai-fa-ku/43-swiper.md)
     * [4.4 boostrap](second-chapter/4-yi-dong-duan-kai-fa-ku/94-boostrap.md)
     * [4.5 优化操作](second-chapter/4-yi-dong-duan-kai-fa-ku/45-you-hua-cao-zuo.md)
+* [Django](django.md)
+  * [1 Django入门](django/1-djangoru-men.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
