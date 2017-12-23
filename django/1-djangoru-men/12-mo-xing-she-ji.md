@@ -115,7 +115,6 @@ b.btitle
 ```
 b.btitle=u"天龙八部"
 b.save()
-
 ```
 
 * 删除图书信息：
