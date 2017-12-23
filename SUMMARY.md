@@ -118,6 +118,7 @@
 * [Django](django.md)
   * [1 Django入门](django/1-djangoru-men.md)
     * [1.1 搭建开发环境](django/1-djangoru-men/11-da-jian-kai-fa-huan-jing.md)
+    * [1.2 模型设计](django/1-djangoru-men/12-mo-xing-she-ji.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
