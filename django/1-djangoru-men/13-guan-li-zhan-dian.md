@@ -54,5 +54,31 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Question,QuestionAdmin)
 ```
 
+#### 列表页属性
+
+显示字段，点击排序
+
+```
+list_display = ['pk', 'btitle', 'bpub_date']
+```
+
+过滤字段，过滤框在右侧
+
+```
+list_filter = ['btitle']
+```
+
+搜索字段，搜索框在上方
+
+```
+search_fields = ['btitle']
+```
+
+分页，分页框在下方
+
+```
+list_per_page = 10
+```
+
 
 
