@@ -54,5 +54,42 @@
 
 ### 字段选项
 
+通过字段选项，可以实现对字段的约束
+
+* 在字段对象时通过关键字参数指定
+* null：如果为True，Django 将空值以NULL 存储到数据库中，默认值是 False
+* blank：如果为True，则该字段允许为空白，默认值是 False
+* 对比：null是数据库范畴的概念，blank是表单验证证范畴的
+* db\_column：字段的名称，如果未指定，则使用属性的名称
+* db\_index：若值为 True, 则在表中会为此字段创建索引
+* default：默认值
+* primary\_key：若为 True, 则该字段会成为模型的主键字段
+* unique：如果为 True, 这个字段在表中必须有唯一值
+
+### 关系
+
+总共三种关系：
+
+* ForeignKey：一对多，将字段定义在多的一端
+* ManyToManyField：多对多，两端都定义字段
+* OneToOneField：一对一，任意一端
+
+使用self可以维护递归的关联关系
+
+```
+用一访问多：对象.模型类小写_set
+bookinfo.heroinfo_set
+```
+
+```
+用一访问一：对象.模型类小写
+heroinfo.bookinfo
+```
+
+```
+访问id：对象.属性_id
+heroinfo.book_id
+```
+
 
 
