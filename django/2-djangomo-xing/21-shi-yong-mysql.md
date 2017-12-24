@@ -27,5 +27,11 @@ DATABASES = {
 }
 ```
 
+#### 使用数据库生成模型类
+
+```
+python manage.py inspectdb > booktest/models.py
+```
+
 
 
