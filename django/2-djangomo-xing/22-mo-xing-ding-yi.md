@@ -26,5 +26,33 @@
 * 导入from django.db import models
 * 通过models.Field创建字段类型的对象，给属性赋值
 
+4.对于重要数据做逻辑删除替代物理删除，设置isDelete类型为BooleanField，默认为False
+
+### 字段类型
+
+* AutoField：一个根据实际ID自动增长的IntegerField，通常不指定
+
+* * 如果不指定，一个主键字段将自动添加到模型中
+* BooleanField：true/false 字段，此字段的默认表单控制是CheckboxInput
+* NullBooleanField：支持null、true、false三种值
+* CharField\(max\_length=字符长度\)：字符串，默认的表单样式是 TextInput
+* TextField：大文本字段，一般超过4000使用，默认的表单控件是Textarea
+* IntegerField：整数
+* DecimalField\(max\_digits=None, decimal\_places=None\)：使用python的Decimal实例表示的十进制浮点数
+  * DecimalField.max\_digits：位数总数
+  * DecimalField.decimal\_places：小数点后的数字位数
+* FloatField：用Python的float实例来表示的浮点数
+* DateField\[auto\_now=False, auto\_now\_add=False\]\)：使用Python的datetime.date实例表示的日期
+  * 参数DateField.auto\_now：每次保存对象时，自动设置该字段为当前时间，用于"最后一次修改"的时间戳，它总是使用当前日期，默认为false
+  * 参数DateField.auto\_now\_add：当对象第一次被创建时自动设置当前时间，用于创建的时间戳，它总是使用当前日期，默认为false
+  * 该字段默认对应的表单控件是一个TextInput. 在管理员站点添加了一个JavaScript写的日历控件，和一个“Today"的快捷按钮，包含了一个额外的invalid\_date错误消息键
+  * auto\_now\_add, auto\_now, and default 这些设置是相互排斥的，他们之间的任何组合将会发生错误的结果
+* TimeField：使用Python的datetime.time实例表示的时间，参数同DateField
+* DateTimeField：使用Python的datetime.datetime实例表示的日期和时间，参数同DateField
+* FileField：一个上传文件的字段
+* ImageField：继承了FileField的所有属性和方法，但对上传的对象进行校验，确保它是个有效的image
+
+### 字段选项
+
 
 
