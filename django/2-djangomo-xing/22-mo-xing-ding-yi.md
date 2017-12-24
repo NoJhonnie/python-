@@ -91,5 +91,69 @@ heroinfo.bookinfo
 heroinfo.book_id
 ```
 
+### 元选项
+
+* 在模型类中定义类Meta，用于设置元信息
+
+* 元信息db\_table：定义数据表名称，推荐使用小写字母，数据表的默认名称
+
+```
+<app_name>_<model_name>
+```
+
+* ordering：对象的默认排序字段，获取对象的列表时使用，接收属性构成的列表
+
+```
+class BookInfo(models.Model):
+    ...
+    class Meta():
+        ordering = ['id']
+```
+
+* 字符串前加-表示倒序，不加-表示正序
+
+```
+class BookInfo(models.Model):
+    ...
+    class Meta():
+        ordering = ['-id']
+```
+
+* 排序会增加数据库的开销
+
+## 示例
+
+* 创建test2项目，并创建booktest应用，使用mysql数据库
+
+* 定义图书模型
+
+```
+class BookInfo(models.Model):
+    btitle = models.CharField(max_length=20)
+    bpub_date = models.DateTimeField()
+    bread = models.IntegerField(default=0)
+    bcommet = models.IntegerField(default=0)
+    isDelete = models.BooleanField(default=False)
+```
+
+* 英雄模型
+
+```
+class HeroInfo(models.Model):
+    hname = models.CharField(max_length=20)
+    hgender = models.BooleanField(default=True)
+    isDelete = models.BooleanField(default=False)
+    hcontent = models.CharField(max_length=100)
+    hbook = models.ForeignKey('BookInfo')
+```
+
+* 定义index、detail视图
+* index.html、detail.html模板
+* 配置url，能够完成图书及英雄的展示
+
+### 测试数据
+
+
+
 
 
