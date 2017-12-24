@@ -121,6 +121,7 @@
     * [1.2 模型设计](django/1-djangoru-men/12-mo-xing-she-ji.md)
     * [1.3 管理站点](django/1-djangoru-men/13-guan-li-zhan-dian.md)
   * [2 Django模型](django/2-djangomo-xing.md)
+    * [2.1 使用mysql](django/2-djangomo-xing/21-shi-yong-mysql.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
