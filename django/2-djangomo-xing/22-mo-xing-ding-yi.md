@@ -15,5 +15,16 @@
 * 不能时python的保留关键字
 * 不能使用连续的下划线，这个被本身的查询方式占用
 
+### 定义属性
+
+1.定义属性需要字段类型
+
+2.字段类型先被定义再django.db.models.fields目录下，为了方便使用，被导入django.db.models中
+
+3.使用方式：
+
+* 导入from django.db import models
+* 通过models.Field创建字段类型的对象，给属性赋值
+
 
 
