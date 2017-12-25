@@ -130,7 +130,18 @@ maxDate = list.aggregate(Max('bpub_date'))
 
 ### F对象
 
+模型两个字段要进行比较，则要用到F对象构造
 
+```
+list.filter(bread__gte=F('bcommet'))
+```
 
+django支持对F\(\)对象使用运算，同时也可以写作“模型类\_\_列名”进行关联查询。
 
+```
+list.filter(bread__gte=F('bcommet') * 2)    运算
+list.filter(isDelete=F('heroinfo__isDelete'))    关联查询
+```
+
+注：date/time字段查询出来后，可以与timedelta\(\)进行运算。
 
