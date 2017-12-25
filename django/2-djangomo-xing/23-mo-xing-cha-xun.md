@@ -26,5 +26,24 @@ filter(键1=值1，键2=值2)
 
 在返回的列表中，可以使用下标的方式进行限制，等同于sql中的limit和offset，但注意不支持负数索引。而且使用下标后返回一个新的查询集，不会立即执行查询。如果获取一个对象，直接使用\[0\]，则等同于\[0:1\].get\(\)，但若没有数据，则会引发IndexError异常，\[0:1\].get\(\)引发DoesNotExist异常。
 
+#### 查询集缓存
+
+每个查询集都包含一个缓存来最小化对数据库的访问，在新建的查询集中，缓存为空。当首次查询集求值时，会发生数据库查询，Django会在将查询的结果存在查询集的缓存中，并返回请求的结果。而接下来对查询集求值，则会重用缓存的结果。可以分为以下两种情况：
+
+情况一：构成两个查询集，无法重用缓存，每次查询都会与数据库进行交互，增加数据库的负载。
+
+```
+print([e.title for e in Entry.objects.all()])
+print([e.title for e in Entry.objects.all()])
+```
+
+情况二：两次循环使用同一个查询集，第二次使用缓存中的数据。
+
+```
+querylist=Entry.objects.all()
+print([e.title for e in querylist])
+print([e.title for e in querylist])
+```
+
 
 
