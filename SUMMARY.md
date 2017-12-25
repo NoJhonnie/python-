@@ -124,6 +124,7 @@
     * [2.1 使用mysql](django/2-djangomo-xing/21-shi-yong-mysql.md)
     * [2.2 模型定义](django/2-djangomo-xing/22-mo-xing-ding-yi.md)
     * [2.3 模型查询](django/2-djangomo-xing/23-mo-xing-cha-xun.md)
+    * [2.4 自连接](django/2-djangomo-xing/24-zi-lian-jie.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
