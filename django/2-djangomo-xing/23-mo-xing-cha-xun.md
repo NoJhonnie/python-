@@ -119,3 +119,18 @@ filter(pk__lt=6)
 
 ### 聚合函数
 
+使用aggregate\(\)函数返回聚合函数的值，包括：
+
+Avg，Count，Max，Min，Sum
+
+```
+from django.db.models import Max
+maxDate = list.aggregate(Max('bpub_date'))
+```
+
+### F对象
+
+
+
+
+
