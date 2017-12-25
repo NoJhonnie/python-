@@ -49,3 +49,73 @@ print([e.title for e in querylist])
 
 ### 字段查询
 
+为了实现sql中where的功能，将其作为方法filter\(\)、exclude\(\)、get\(\)的参数。通用语法：属性名称\_\_比较运算符=值，其中两个下划线的左侧是属性名称，右侧是比较类型。使用“属性名\_id ”表示外键的原始值。
+
+```
+filter(title__contains="%")=>where title like '%\%%'
+表示查找标题中包含%的
+```
+
+#### 比较运算符
+
+* exact：表示判等，大小写敏感；如果没有写“
+
+```
+filter(isDelete=False)
+```
+
+* contains：是否包含，大小写敏感
+
+```
+exclude(btitle__contains='传')
+```
+
+* startswith、endswith：以value开头或结尾，大小写敏感
+
+```
+exclude(btitle__endswith='传')
+```
+
+* isnull、isnotnull：是否为null
+
+```
+filter(btitle__isnull=False)
+```
+
+* 在前面加个i表示不区分大小写，如iexact、icontains、istarswith、iendswith
+* in：是否包含在范围内
+
+```
+filter(pk__in=[1, 2, 3, 4, 5])
+```
+
+* gt、gte、lt、lte：大于、大于等于、小于、小于等于
+
+```
+filter(id__gt=3)
+```
+
+* year、month、day、week\_day、hour、minute、second：对日期间类型的属性进行运算
+
+```
+filter(bpub_date__year=1980)
+filter(bpub_date__gt=date(1980, 12, 31))
+```
+
+* 跨关联关系的查询：处理join查询
+  * 语法：模型类名&lt;属性名&gt;&lt;比较&gt;
+  * 注：可以没有\_\_&lt;比较&gt;部分，表示等于，结果同inner join
+  * 可返向使用，即在关联的两个模型中都可以使用
+
+```
+filter(heroinfo__hcontent__contains='八')
+```
+
+* 查询的快捷方式：pk，pk表示primary key，默认的主键是id
+
+```
+filter(pk__lt=6)
+```
+
+### 聚合函数
+
