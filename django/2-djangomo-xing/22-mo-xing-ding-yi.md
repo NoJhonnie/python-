@@ -161,7 +161,6 @@ insert into booktest_bookinfo(btitle,bpub_date,bread,bcommet,isDelete) values
 ('天龙八部','1986-7-24',36,40,0),
 ('笑傲江湖','1995-12-24',20,80,0),
 ('雪山飞狐','1987-11-11',58,24,0)
-
 ```
 
 * 模型HeroInfo的测试数据
