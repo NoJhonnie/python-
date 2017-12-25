@@ -145,3 +145,19 @@ list.filter(isDelete=F('heroinfo__isDelete'))    关联查询
 
 注：date/time字段查询出来后，可以与timedelta\(\)进行运算。
 
+```
+list.filter(bpub_date__lt=F('bpub_date') + timedelta(days=1))
+```
+
+### Q对象
+
+在过滤器中and查询可以直接使用，但若要进行or查询，则需要Q\(\)对象。Q对象\(django.db.models.Q\)用于封装一组关键字参数，这些关键字参数与“比较运算符”中的相同。Q对象可以使用&\(and\)、\|\(or\)操作符组合起来，当操作符应用在两个Q对象时，会产生一个新的Q对象。也可以使用~\(not\)在Q对象前表示取反。
+
+```
+list.filter(pk_ _lt=6).filter(bcommet_ _gt=10)    过滤器and
+list.filter(Q(pk_ _lt=6) | Q(bcommet_ _gt=10))    or操作
+list.filter(~Q(pk__lt=6))    取反操作
+```
+
+
+
