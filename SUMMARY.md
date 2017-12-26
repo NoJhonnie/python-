@@ -128,6 +128,7 @@
   * [3 Django视图](django/3-djangoshi-tu.md)
     * [3.1 URLconf](django/3-djangoshi-tu/31-urlconf.md)
     * [3.2 视图函数](django/3-djangoshi-tu/32-shi-tu-han-shu.md)
+    * [3.3 HttpRequest对象](django/3-djangoshi-tu/33-httprequestdui-xiang.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
