@@ -132,6 +132,7 @@
       * [3.3.1 QueryDict对象](django/3-djangoshi-tu/33-httprequestdui-xiang/331-querydictdui-xiang.md)
       * [3.3.2 GET与POST](django/3-djangoshi-tu/33-httprequestdui-xiang/332-get.md)
     * [3.4 Response对象](django/3-djangoshi-tu/34-responsedui-xiang.md)
+    * 3.5 状态保持
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 

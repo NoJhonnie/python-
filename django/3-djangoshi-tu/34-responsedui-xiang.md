@@ -22,5 +22,5 @@
   * max\_age与expires二选一
   * 如果不指定过期时间，则两个星期后过期
 
-
+delete\_cookie\(key\)：删除指定key的Cookie，如果没有则不发生。
 
