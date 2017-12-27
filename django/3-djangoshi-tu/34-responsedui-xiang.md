@@ -32,5 +32,83 @@
 
 该子类返回json数据，一般用于异步请求，有_\_init_\_\(data\)方法。它帮助用户创建JSON编码的响应，其中参数data是字典对象，而JsonResponse的默认Content-Type为application/json。
 
+### 简写函数
+
+#### render {#render}
+
+* render\(request, template\_name\[, context\]\)
+* 结合一个给定的模板和一个给定的上下文字典，并返回一个渲染后的HttpResponse对象
+* request：该request用于生成response
+* template\_name：要使用的模板的完整名称
+* context：添加到模板上下文的一个字典，视图将在渲染模板之前调用它
+
+```
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'booktest/index.html', 
+    {'h1': 'hello'})
+
+```
+
+#### 重定向 {#重定向}
+
+* redirect\(to\)
+* 为传递进来的参数返回HttpResponseRedirect
+* to推荐使用反向解析
+
+```
+from django.shortcuts import redirect
+from django.core.urlresolvers import reverse
+
+def index(request):
+    return redirect(reverse('booktest:index2'))
+
+```
+
+#### 得到对象或返回404 {#得到对象或返回404}
+
+* get\_object\_or\_404\(klass,
+  _args, \*_
+  kwargs\)
+* 通过模型管理器或查询集调用get\(\)方法，如果没找到对象，不引发模型的DoesNotExist异常，而是引发Http404异常
+* klass：获取对象的模型类、Manager对象或QuerySet对象
+* \*\*kwargs：查询的参数，格式应该可以被get\(\)和filter\(\)接受
+* 如果找到多个对象将引发MultipleObjectsReturned异常
+
+```
+from django.shortcuts import *
+
+def detail(request, id):
+    try:
+        book = get_object_or_404(BookInfo, pk=id)
+    except BookInfo.MultipleObjectsReturned:
+        book = None
+    return render(request, 'booktest/detail.html', {'book': book})
+
+将settings.py中的DEBUG改为False
+将请求地址输入2和100查看效果
+
+```
+
+#### 得到列表或返回404 {#得到列表或返回404}
+
+* get\_list\_or\_404\(klass,
+  _args, \*_
+  kwargs\)
+* klass：获取列表的一个Model、Manager或QuerySet实例
+* \*\*kwargs：查寻的参数，格式应该可以被get\(\)和filter\(\)接受
+
+```
+from django.shortcuts import *
+
+def index(request):
+    # list = get_list_or_404(BookInfo, pk__lt=1)
+    list = get_list_or_404(BookInfo, pk__lt=6)
+    return render(request, 'booktest/index.html', {'list': list})
+
+将settings.py中的DEBUG改为False
+```
+
 
 
