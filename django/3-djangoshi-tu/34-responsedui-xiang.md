@@ -66,7 +66,7 @@ def index(request):
 
 #### 得到对象或返回404 {#得到对象或返回404}
 
-* get\_object\_or\_404\(klass,_args, \*_kwargs\)
+* get\_object\_or\_404\(klass,args, \*kwargs\)
 * 通过模型管理器或查询集调用get\(\)方法，如果没找到对象，不引发模型的DoesNotExist异常，而是引发Http404异常
 * klass：获取对象的模型类、Manager对象或QuerySet对象
 * \*\*kwargs：查询的参数，格式应该可以被get\(\)和filter\(\)接受
@@ -89,7 +89,7 @@ def detail(request, id):
 
 #### 得到列表或返回404 {#得到列表或返回404}
 
-* get\_list\_or\_404\(klass,_args, \*_kwargs\)
+* get\_list\_or\_404\(klass,args, \*kwargs\)
 * klass：获取列表的一个Model、Manager或QuerySet实例
 * \*\*kwargs：查寻的参数，格式应该可以被get\(\)和filter\(\)接受
 
