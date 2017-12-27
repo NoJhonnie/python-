@@ -9,5 +9,18 @@
 * status\_code：响应的HTTP响应状态码
 * content-type：指定输出的MIME类型
 
+### 方法
+
+* init：使页面内容实例化HttpResponse对象
+* write\(content\)：以文件方式写
+* flush\(\)：以文件的方式输出缓存区
+* set\_cookie\(key, value='', max\_age=None, xpires=None\)：设置Cookie
+
+  * key、value都是字符串类型
+  * max\_age是一个整数，表示在指定秒数后过期
+  * expires是一个datetime或timedelta对象，会话将在这个指定的日期/时间过期，注意datetime和timedelta值只有在使用PickleSerializer时才可序列化
+  * max\_age与expires二选一
+  * 如果不指定过期时间，则两个星期后过期
+
 
 
