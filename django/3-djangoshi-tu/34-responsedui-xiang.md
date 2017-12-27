@@ -48,7 +48,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'booktest/index.html', 
     {'h1': 'hello'})
-
 ```
 
 #### 重定向 {#重定向}
@@ -63,7 +62,6 @@ from django.core.urlresolvers import reverse
 
 def index(request):
     return redirect(reverse('booktest:index2'))
-
 ```
 
 #### 得到对象或返回404 {#得到对象或返回404}
@@ -88,7 +86,6 @@ def detail(request, id):
 
 将settings.py中的DEBUG改为False
 将请求地址输入2和100查看效果
-
 ```
 
 #### 得到列表或返回404 {#得到列表或返回404}
@@ -105,8 +102,8 @@ from django.shortcuts import *
 def index(request):
     # list = get_list_or_404(BookInfo, pk__lt=1)
     list = get_list_or_404(BookInfo, pk__lt=6)
-    return render(request, 'booktest/index.html', {'list': list})
-
+    return render(request, 'booktest/index.html', 
+    {'list': list})
 将settings.py中的DEBUG改为False
 ```
 
