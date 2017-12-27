@@ -25,7 +25,16 @@ http协议是无状态的，每次请求都是一次新的请求，不会记得�
 * flush\(\)：删除当前的会话数据并删除会话的Cookie
 * del request.session\['member\_id'\]：删除会话
 
+### 会话过期时间
 
+* set\_expiry\(value\)：设置会话的超时时间，如果没有指定，则两个星期后过期
+* 如果value是一个整数，会话将在values秒没有活动后过期
+* 若果value是一个imedelta对象，会话将在当前时间加上这个指定的日期/时间过期
+* 如果value为0，那么用户会话的Cookie将在用户的浏览器关闭时过期
+* 如果value为None，那么会话永不过期
+* 修改视图中login\_handle函数，查看效果
+
+### 存储session
 
 
 
