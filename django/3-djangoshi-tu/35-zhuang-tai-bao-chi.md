@@ -36,7 +36,58 @@ http协议是无状态的，每次请求都是一次新的请求，不会记得�
 
 ### 存储session
 
-存储会话方式使用settings.py的SESSION\_ENGINE项指定。
+存储会话方式使用settings.py的SESSION\_ENGINE项指定。有以下三种存储方式：
+
+* 基于数据库的会话：这是django默认的会话存储方式，需要添加django.contrib.sessions到INSTALLED\_APPS设置中，运行manage.py migrate在数据库中安装会话表。
+
+```
+SESSION_ENGINE='django.contrib.sessions.backends.db'
+```
+
+* 基于缓存的会话：只存在本地中，如果丢失则不能找回，但比数据库的方式更快。
+
+```
+SESSION_ENGINE='django.contrib.sessions.backends.cache'
+```
+
+* 数据库和缓存同时使用：优先从本地缓存中获取，没有则从数据库中获取。
+
+```
+SESSION_ENGINE='django.contrib.sessions.backends.cached_db'
+```
+
+### 使用Redis缓存session
+
+会话支持文件、纯cookie、Memcached、Redis等方式存储。以下是Redis存储。
+
+* 安装包
+
+```
+pip install django-redis-sessions
+```
+
+* 修改settings中的配置，增加如下项
+
+```
+SESSION_ENGINE = 'redis_sessions.session'
+SESSION_REDIS_HOST = 'localhost'
+SESSION_REDIS_PORT = 6379
+SESSION_REDIS_DB = 0
+SESSION_REDIS_PASSWORD = ''
+SESSION_REDIS_PREFIX = 'session'
+```
+
+* 管理redis的命令
+
+```
+启动：sudo redis-server /etc/redis/redis.conf
+停止：sudo redis-server stop
+重启：sudo redis-server restart
+redis-cli：使用客户端连接服务器
+keys *：查看所有的键
+get name：获取指定键的值
+del name：删除指定名称的键
+```
 
 
 
