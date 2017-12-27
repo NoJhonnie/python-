@@ -18,7 +18,14 @@ http协议是无状态的，每次请求都是一次新的请求，不会记得�
 
 ### 使用session
 
-启用会话后，每个HttpRequest对象将具有一个session属性，它是一个类字典对象
+启用会话后，每个HttpRequest对象将具有一个session属性，它是一个类字典对象，它具有以下方法：
+
+* get\(key, default=None\)：根据键获取会话的值
+* clear\(\)：清除所有会话
+* flush\(\)：删除当前的会话数据并删除会话的Cookie
+* del request.session\['member\_id'\]：删除会话
+
+
 
 
 
