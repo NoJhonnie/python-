@@ -28,5 +28,9 @@
 
 重定向，是服务器端跳转，该构造函数的第一个参数用来指定重定向的地址。
 
+### 子类JsonResponse
+
+该子类返回json数据，一般用于异步请求，有_\_init_\_\(data\)方法。它帮助用户创建JSON编码的响应，其中参数data是字典对象，而JsonResponse的默认Content-Type为application/json。
+
 
 
