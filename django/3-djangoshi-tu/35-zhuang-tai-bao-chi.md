@@ -36,5 +36,7 @@ http协议是无状态的，每次请求都是一次新的请求，不会记得�
 
 ### 存储session
 
+存储会话方式使用settings.py的SESSION\_ENGINE项指定。
+
 
 
