@@ -50,4 +50,22 @@
 多行注释
 {% endcomment %}
 ```
-####
+####include
+加载模板并以标签内的参数渲染
+```
+{%include "foo/bar.html"%}
+```
+####url
+反向解析
+```
+{% url 'name' p1 p2 %}
+```
+####csrf_token
+这个标签用于跨站请求伪造保护
+```
+{% csrf_token %}
+```
+* 布尔标签：and、or、and比or的优先级高
+* block、extends：用于模板继承
+* autoescape：HTML转义
+###过滤器
