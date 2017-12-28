@@ -45,5 +45,19 @@ def index(request):
     return HttpResponse(tem.render(context))
 ```
 
+### 快捷函数
+
+为了减少加载模板和渲染模板的重复代码，django提供了快捷函数：
+
+* render\__to_\_string\(" "\)
+* render\(request, '模板', context\)
+
+```
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'temtest/index.html')
+```
+
 
 
