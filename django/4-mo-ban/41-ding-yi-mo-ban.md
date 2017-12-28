@@ -45,3 +45,9 @@
 {% endif %}
 ```
 ####comment标签
+```
+{% comment %}
+多行注释
+{% endcomment %}
+```
+####
