@@ -19,4 +19,5 @@
 1.在models.py定义类HeroInfo
 2.在views.py中传递HeroInfo对象
 3.最后在detail.html中调用
-
+###标签
+标签的语法：{% tag \%}
