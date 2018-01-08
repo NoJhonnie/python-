@@ -17,3 +17,5 @@ def csrf2(request):
     return render(request,'booktest/csrf2.html')
 ```
 csrf的保护原理实质上是在本地浏览器中添加cookie信息，从而实现保护，但该方法并不完全安全。
+##验证码
+为了防止网页被暴力请求，我们加入验证码功能，而且验证码也是一种有效防止crsf的方法。验证码本质是将请求信息与session中的内容对比，从而实现浏览器与服务器的验证问题。
