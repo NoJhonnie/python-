@@ -16,4 +16,4 @@ from django.views.decorators.csrf import csrf_exempt
 def csrf2(request):
     return render(request,'booktest/csrf2.html')
 ```
-csrf的保护原理实质上是在本地浏览器中添加cookie信息，从而实现保护，但该方法并不安全。
+csrf的保护原理实质上是在本地浏览器中添加cookie信息，从而实现保护，但该方法并不完全安全。
