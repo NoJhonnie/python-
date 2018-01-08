@@ -135,6 +135,7 @@
     * [3.5 状态保持](django/3-djangoshi-tu/35-zhuang-tai-bao-chi.md)
   * [4 模板](django/4-mo-ban.md)
     * [4.1 定义模板](django/4-mo-ban/41-ding-yi-mo-ban.md)
+    * [4.2 模板继承](django/4-mo-ban/42-mo-ban-ji-cheng.md)
   * 5 高级
   * 6 其他
 * [Ubuntu的使用](ubuntude-shi-yong.md)
