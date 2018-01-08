@@ -7,3 +7,13 @@ CSRF全称cross site request forgery，伪造跨站请求。在网站上存在�
 {% csrf_token %}
 </body>
 ```
+这个时候就能实现跨站请求被拒绝了。
+而对于我们需要的视图不需要保护时，我们可以使用装饰器csrf_exempt
+```
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+def csrf2(request):
+    return render(request,'booktest/csrf2.html')
+```
+csrf的保护原理实质上是在本地浏览器中添加cookie信息，从而实现保护，但该方法并不安全。
