@@ -138,7 +138,7 @@
     * [4.2 模板继承](django/4-mo-ban/42-mo-ban-ji-cheng.md)
     * [4.3 HTML转义](django/4-mo-ban/43-htmlzhuan-yi.md)
     * [4.4 CSRF](django/4-mo-ban/44-csrf.md)
-  * 5 高级
+  * [5 高级](django/5-gao-ji.md)
   * 6 其他
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
