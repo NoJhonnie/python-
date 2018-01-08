@@ -140,6 +140,8 @@
     * [4.4 CSRF](django/4-mo-ban/44-csrf.md)
   * [5 高级](django/5-gao-ji.md)
     * [5.1 静态文件管理](django/5-gao-ji/51-jing-tai-wen-jian-guan-li.md)
+    * [5.2 中间件](django/5-gao-ji/52-zhong-jian-jian.md)
+    * [5.3 上传图片](django/5-gao-ji/53-shang-chuan-tu-pian.md)
   * 6 其他
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
