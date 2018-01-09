@@ -21,3 +21,11 @@ Paginator对象的page()方法返回Page对象，不需要手动构造。它有�
 * number:当前页的序号，从1开始；
 * paginator：当前page对象相关的Paginator对象。
 
+该对象方法：
+* has_next():如果有一页返回True；
+* has_previous()：如果有上一页返回True；
+* has_other_pages():有上页或下页返回True；
+* next_page_number():返回下一页的页码，如果没有则抛出InvalidPage异常；
+* previous_page_number():返回上一页的页码，如果没有则抛出InvalidPage异常；
+* len():返回当前页面对象的个数；
+迭代页面对象：访问当前页面中的每个对象。
