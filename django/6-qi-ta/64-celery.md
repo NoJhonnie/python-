@@ -23,7 +23,6 @@
 celery==3.1.25
 celery-with-redis==3.0
 django-celery==3.1.17
-
 ```
 
 * 配置settings
@@ -40,7 +39,6 @@ import djcelery
 djcelery.setup_loader()
 BROKER_URL = 'redis://127.0.0.1:6379/0'
 CELERY_IMPORTS = ('应用名称.task')
-
 ```
 
 * 在应用目录下创建task.py文件
@@ -54,35 +52,30 @@ def sayhello():
     print('hello ...')
     time.sleep(2)
     print('world ...')
-
 ```
 
 * 迁移，生成celery需要的数据表
 
 ```
 python manage.py migrate
-
 ```
 
 * 启动Redis
 
 ```
 sudo redis-server /etc/redis/redis.conf
-
 ```
 
 * 启动worker
 
 ```
 python manage.py celery worker --loglevel=info
-
 ```
 
 * 调用语法
 
 ```
 function.delay(parameters)
-
 ```
 
 * 使用代码
@@ -101,6 +94,5 @@ def sayhello(request):
     return HttpResponse("hello world")
 ```
 
-  
 
 
