@@ -149,6 +149,7 @@
     * [6.1 富文本编辑器](django/6-qi-ta/61.md)
     * [6.2 缓存](django/6-qi-ta/62-huan-cun.md)
     * [6.3 全文检索](django/6-qi-ta/63-quan-wen-jian-suo.md)
+    * [6.4 celery](django/6-qi-ta/64-celery.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
