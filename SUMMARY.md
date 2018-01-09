@@ -147,6 +147,7 @@
     * [5.6 Ajax异步](django/5-gao-ji/56-ajaxyi-bu.md)
   * [6 其他](django/6-qi-ta.md)
     * [6.1 富文本编辑器](django/6-qi-ta/61.md)
+    * [6.2 缓存](django/6-qi-ta/62-huan-cun.md)
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
 
