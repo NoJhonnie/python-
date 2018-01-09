@@ -142,6 +142,7 @@
     * [5.1 静态文件管理](django/5-gao-ji/51-jing-tai-wen-jian-guan-li.md)
     * [5.2 中间件](django/5-gao-ji/52-zhong-jian-jian.md)
     * [5.3 上传图片](django/5-gao-ji/53-shang-chuan-tu-pian.md)
+    * [5.4 admin站点](django/5-gao-ji/54-adminzhan-dian.md)
   * 6 其他
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
