@@ -144,6 +144,7 @@
     * [5.3 上传图片](django/5-gao-ji/53-shang-chuan-tu-pian.md)
     * [5.4 admin站点](django/5-gao-ji/54-adminzhan-dian.md)
     * [5.5 分页](django/5-gao-ji/55-fen-ye.md)
+    * [5.6 Ajax异步](django/5-gao-ji/56-ajaxyi-bu.md)
   * 6 其他
 * [Ubuntu的使用](ubuntude-shi-yong.md)
   * [设置静态IP](ubuntude-shi-yong/she-zhi-jing-tai-ip.md)
