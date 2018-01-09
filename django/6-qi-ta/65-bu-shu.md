@@ -17,10 +17,7 @@
 * 在本地的虚拟环境中，项目根目录下，执行命令收集所有包
 
 ```
-pip freeze 
->
- plist.txt
-
+pip freeze > plist.txt
 ```
 
 * 通过ftp软件将开发好的项目上传到此服务器的某个目录
@@ -30,7 +27,6 @@ pip freeze
 sudo apt-get install python-virtualenv
 sudo easy_install virtualenvwrapper
 mkvirtualenv [虚拟环境名称]
-
 ```
 
 * 在虚拟环境上工作，安装所有需要的包
@@ -38,7 +34,6 @@ mkvirtualenv [虚拟环境名称]
 ```
 workon [虚拟环境名称]
 pip install -r plist.txt
-
 ```
 
 * 更改settings.py文件
@@ -46,7 +41,6 @@ pip install -r plist.txt
 ```
 DEBUG = False
 ALLOW_HOSTS=['*',]表示可以访问服务器的ip
-
 ```
 
 * 启动服务器，运行正常，但是静态文件无法加载
@@ -70,7 +64,6 @@ ALLOW_HOSTS=['*',]表示可以访问服务器的ip
 
 ```
 pip install uwsgi
-
 ```
 
 * 配置uWSGI，在项目中新建文件uwsgi.ini，编写如下配置
@@ -86,7 +79,6 @@ threads=2
 master=True
 pidfile=uwsgi.pid
 daemonize=uswgi.log
-
 ```
 
 * 启动：uwsgi --ini uwsgi.ini
@@ -105,7 +97,6 @@ daemonize=uswgi.log
 
 ```
 sudo apt-get nginx
-
 ```
 
 * 这里以下载压缩文件为例演示
@@ -118,7 +109,6 @@ tar zxvf nginx-1.6.3.tar.gz
 ./configure
 make
 sudo make install
-
 ```
 
 * 默认安装到/usr/local/nginx目录，进入此目录执行命令
@@ -137,7 +127,6 @@ location / {
     include uwsgi_params;将所有的参数转到uwsgi下
     uwsgi_pass uwsgi的ip与端口;
 }
-
 ```
 
 * 修改uwsgi.ini文件，启动socket，禁用http
@@ -154,7 +143,6 @@ location / {
 location /static {
     alias /var/www/test5/static/;
 }
-
 ```
 
 * 在服务器上创建目录结构“/var/www/test5/”
@@ -162,14 +150,12 @@ location /static {
 
 ```
 sudo chmod 777 /var/www/test5
-
 ```
 
 * 创建static目录，注意顺序是先分配权限，再创建目录
 
 ```
 mkdir static
-
 ```
 
 * 最终目录结构如下图：
@@ -186,7 +172,6 @@ static
 ```
 STATIC_ROOT='/var/www/test5/static/'
 STATIC_URL='/static/'
-
 ```
 
 * 收集所有静态文件到static\_root指定目录：python manage.py collectstatic
